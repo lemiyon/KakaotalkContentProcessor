@@ -1,4 +1,4 @@
-package com.cdg.bola.kakaotalkProcessor;
+package com.cdg.kakaotalkProcessor;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -34,5 +34,11 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    
+    
+    public void test()
+    {
+    	
     }
 }

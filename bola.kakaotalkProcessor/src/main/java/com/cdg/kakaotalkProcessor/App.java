@@ -1,4 +1,4 @@
-package com.cdg.bola.kakaotalkProcessor;
+package com.cdg.kakaotalkProcessor;
 
 /**
  * Hello world!
