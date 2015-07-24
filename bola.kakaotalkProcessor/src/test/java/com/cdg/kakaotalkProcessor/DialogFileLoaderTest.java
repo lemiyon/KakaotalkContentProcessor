@@ -37,6 +37,7 @@ public class DialogFileLoaderTest {
 	{
 		Assert.assertNotNull(dfLoader);
 		Assert.assertEquals(0, dfLoader.loadDialogFile());
+		assertNotNull(dfLoader.getBuffer());
 	}
 	
 	public void test() {
