@@ -33,10 +33,10 @@ public class DialogFileLoaderTest {
 	}
 
 	@Test
-	public void testDialogFileLoad()
+	public void testDialogFileLoad() throws Exception
 	{
 		Assert.assertNotNull(dfLoader);
-		//dfLoader.loadDialogFile();
+		Assert.assertEquals(0, dfLoader.loadDialogFile());
 	}
 	
 	public void test() {
