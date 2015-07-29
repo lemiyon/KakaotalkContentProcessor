@@ -24,6 +24,7 @@ public class KakaotalkProcessor {
 		// TODO Auto-generated method stub
 		
 		//StringBuffer를 받아와 앞의 기본적인 대화 정보를 자른다.
+		StringBuffer buffer = dfLoader.getBuffer();
 		
 		/*
 		 * txt파일에서 각 앞 줄의 yyyy.mm.dd..형식으로 되어 있는 시간을 받아 1 ~ 12시 까지의 원소를 갖는 해쉬 맵을 만들고, 거기에 해당하는 대화의 수를
