@@ -38,7 +38,7 @@ public class AppTest
     @Before
     public void setUp()
     {
-    
+    	kprocessor = new KakaotalkProcessor();
     }
     
     public void testApp()
@@ -47,8 +47,10 @@ public class AppTest
     }
     
     
-    public void test()
+    public void testKakaotalProcessor()
     {
-    	
+    	assertNotNull(kprocessor);
+    	assertEquals(0, kprocessor.getMostNoisyTime());
+    	assertEquals(0, kprocessor.getTopFiveTermsMostUsedForEachUser());
     }
 }
