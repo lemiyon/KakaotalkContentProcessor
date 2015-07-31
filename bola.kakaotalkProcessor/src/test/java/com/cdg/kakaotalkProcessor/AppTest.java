@@ -1,5 +1,8 @@
 package com.cdg.kakaotalkProcessor;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.junit.Before;
 
 import junit.framework.Test;
@@ -43,14 +46,28 @@ public class AppTest
     
     public void testApp()
     {
-        assertTrue( true );
+     //   assertTrue( true );
     }
     
     
     public void testKakaotalProcessor()
     {
     	assertNotNull(kprocessor);
-    	assertEquals(0, kprocessor.getMostNoisyTime());
-    	assertEquals(0, kprocessor.getTopFiveTermsMostUsedForEachUser());
+    	assertEquals(0, kprocessor.loadDialogFile());
+    	assertEquals(0, kprocessor.getFiveTermsMostUsedForEachUser());
+    	
+    }
+    
+    
+    public void testGetFiveTermsMostUsedForEachUser()
+    {
+    	String a = ".........";
+    	Pattern p = Pattern.compile("\\.");
+    	Matcher m = p.matcher(a);
+    	
+    	if(m.find())
+    	{
+    		System.out.println(m.group());
+    	}
     }
 }
